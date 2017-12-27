@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Agora</title>
-    <%= csrf_meta_tags %>
+    <title>Agora - Concert tickets at the price you want to pay!</title>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="UTF-8"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=2.0' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="robots" content="index,follow"/>
+    <meta name="googlebot" content="index,follow"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="Description" content="Agora is your concert ticket matchmaker, saving you time and money on tickets to see your favorite Bay Area shows. Name the price that you want to pay; we will work to find the tickets for you so that you can sit back, relax, and enjoy the show.">
+    <meta name="Keywords" content="tickets, concerts, san francisco, sf concerts, bill grahm, music, festivals, music concerts">
+    
+    <meta property="og:title" content="Agora - Concert tickets at the price you want to pay!" />
+    <meta property="og:description" content="Agora is your concert ticket matchmaker, saving you time and money on tickets to see your favorite Bay Area shows. Name the price that you want to pay; we will work to find the tickets for you so that you can sit back, relax, and enjoy the show." />
+    <meta property="og:image" content="<%= image_url "favicon.svg" %>" />
+<%= csrf_meta_tags %>
+    <link rel="shortcut icon" href="<%= image_url "favicon.svg" %>" />
+    <%= javascript_pack_tag 'agora_home' %>
+    <%= stylesheet_pack_tag 'agora_home' %>
   </head>
-
   <body>
     <%= yield %>
   </body>
